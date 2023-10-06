@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 let fullName = "Martín Rantucho";
 let currentYear = new Date().getFullYear();
-let profilePicture = "images/Profile.jpg"
+let profilePicture = "images/Profile2.jpg"
 
 
 
