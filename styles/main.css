@@ -75,14 +75,7 @@ h2 {
     margin-top: 30px;
 }
 
-main {
-    margin-top: 125px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
+
 
 picture {
     margin: 0 auto;
@@ -155,3 +148,23 @@ footer {
     }
 
 }
+
+article {
+    background-color: #ccc;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  /* Create a two-column grid layout */
+  #temples {
+ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  /* Ensure all images have the same size */
+  article img {
+    width: 100%; /* Make all images fill their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
