@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#ensembleDropdown {
+    margin: 10px;
+}
+
+#agendaContainer {
+    margin: 20px;
+}
+
+#agendaList {
+    list-style: none;
+    padding: 0;
+}
+
+#agendaList li {
+    margin-bottom: 10px;
+}
