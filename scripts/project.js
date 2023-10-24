@@ -32,6 +32,12 @@ fetch(jsonDataUrl)
                 ensemblesToDisplay.push(...ensembleData.children);
             }
 
+            // Check if the selected ensemble has a parent.
+            const parentEnsembleData = data.ensembles.find(ensemble => ensemble.children && ensemble.children.includes(selectedEnsemble));
+            if (parentEnsembleData) {
+                ensemblesToDisplay.push(parentEnsembleData.name);
+            }
+
             // Filter and display events for the selected ensembles.
             data.events.forEach(event => {
                 if (event.ensembles.some(ensemble => ensemblesToDisplay.includes(ensemble))) {

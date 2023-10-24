@@ -38,7 +38,7 @@
         },
         {
             "name": "CamFil",
-            "children": ["ES", "CAV", "ECAS", "VN", "CPAT","PILTRI"]
+            "children": ["ES", "CAV", "ECAS", "VN", "CPAT", "PILTRI"]
         },
         {
             "name": "EnsMon",
@@ -80,6 +80,222 @@
             "conductor": "Conductor C",
             "repertoire": "String Quartet",
             "ensembles": ["ECAS", "TREPUN", "EnsMar"]
+        },
+        {
+            "date": "2024-01-15",
+            "startTime": "14:00",
+            "endTime": "16:00",
+            "location": "Auditorium",
+            "conductor": "Conductor D",
+            "repertoire": "Orchestral Suite",
+            "ensembles": ["ECAS"]
+        },
+        {
+            "date": "2024-01-30",
+            "startTime": "19:30",
+            "endTime": "21:30",
+            "location": "Concert Hall 1",
+            "conductor": "Conductor E",
+            "repertoire": "Chamber Concert",
+            "ensembles": ["CamFil"]
+        },
+        {
+            "date": "2024-02-10",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "location": "Auditorium",
+            "conductor": "Conductor F",
+            "repertoire": "String Quartet",
+            "ensembles": ["CAV"]
+        },
+        {
+            "date": "2024-02-20",
+            "startTime": "15:00",
+            "endTime": "17:00",
+            "location": "Community Center",
+            "conductor": "Conductor G",
+            "repertoire": "Symphony No. 2",
+            "ensembles": ["ECAS", "PILTRI"]
+        },
+        {
+            "date": "2024-03-05",
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "location": "Concert Hall 2",
+            "conductor": "Conductor H",
+            "repertoire": "Piano Concerto",
+            "ensembles": ["ECAS", "TREPUN", "EnsMar"]
+        },
+        {
+            "date": "2024-03-20",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "location": "Auditorium",
+            "conductor": "Conductor I",
+            "repertoire": "Chamber Music",
+            "ensembles": ["ECAS", "CamFil"]
+        },
+        {
+            "date": "2024-04-10",
+            "startTime": "14:00",
+            "endTime": "16:00",
+            "location": "Community Center",
+            "conductor": "Conductor J",
+            "repertoire": "String Quartet",
+            "ensembles": ["CAV", "ES", "VN"]
+        },
+        {
+            "date": "2024-04-20",
+            "startTime": "19:30",
+            "endTime": "21:30",
+            "location": "Concert Hall 1",
+            "conductor": "Conductor K",
+            "repertoire": "Symphony No. 3",
+            "ensembles": ["ECAS", "VS"]
+        },
+        {
+            "date": "2024-05-15",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "location": "Auditorium",
+            "conductor": "Conductor L",
+            "repertoire": "Chamber Concert",
+            "ensembles": ["CamFil", "PILTRI"]
+        },
+        {
+            "date": "2024-05-30",
+            "startTime": "15:00",
+            "endTime": "17:00",
+            "location": "Concert Hall 2",
+            "conductor": "Conductor M",
+            "repertoire": "Orchestral Suite",
+            "ensembles": ["ECAS", "TREPUN", "EnsMar"]
+        },
+        {
+            "date": "2024-06-05",
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "location": "Community Center",
+            "conductor": "Conductor N",
+            "repertoire": "Piano Concerto",
+            "ensembles": ["ECAS", "VS", "ABRON"]
+        },
+        {
+            "date": "2024-06-20",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "location": "Auditorium",
+            "conductor": "Conductor O",
+            "repertoire": "Chamber Music",
+            "ensembles": ["ECAS", "PILTRI", "EnsMon"]
+        },
+        {
+            "date": "2024-07-10",
+            "startTime": "14:00",
+            "endTime": "16:00",
+            "location": "Concert Hall 1",
+            "conductor": "Conductor P",
+            "repertoire": "String Quartet",
+            "ensembles": ["CAV", "ES"]
+        },
+        {
+            "date": "2024-07-20",
+            "startTime": "19:30",
+            "endTime": "21:30",
+            "location": "Community Center",
+            "conductor": "Conductor Q",
+            "repertoire": "Symphony No. 4",
+            "ensembles": ["ECAS", "VS", "TREPUN"]
+        },
+        {
+            "date": "2024-08-15",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "location": "Auditorium",
+            "conductor": "Conductor R",
+            "repertoire": "Chamber Concert",
+            "ensembles": ["CamFil", "PV"]
+        },
+        {
+            "date": "2024-08-30",
+            "startTime": "15:00",
+            "endTime": "17:00",
+            "location": "Concert Hall 2",
+            "conductor": "Conductor S",
+            "repertoire": "Orchestral Suite",
+            "ensembles": ["ECAS", "PILTRI", "EnsMon", "CPAT"]
+        },
+        {
+            "date": "2024-09-05",
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "location": "Community Center",
+            "conductor": "Conductor T",
+            "repertoire": "Piano Concerto",
+            "ensembles": ["ECAS", "VS", "ABRON"]
+        },
+        {
+            "date": "2024-09-20",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "location": "Auditorium",
+            "conductor": "Conductor U",
+            "repertoire": "Chamber Music",
+            "ensembles": ["ECAS", "PILTRI", "EnsMar"]
+        },
+        {
+            "date": "2024-10-10",
+            "startTime": "14:00",
+            "endTime": "16:00",
+            "location": "Concert Hall 1",
+            "conductor": "Conductor V",
+            "repertoire": "String Quartet",
+            "ensembles": ["CAV", "PV"]
+        },
+        {
+            "date": "2024-10-20",
+            "startTime": "19:30",
+            "endTime": "21:30",
+            "location": "Community Center",
+            "conductor": "Conductor W",
+            "repertoire": "Symphony No. 5",
+            "ensembles": ["ECAS", "VS", "TREPUN", "CPAT"]
+        },
+        {
+            "date": "2024-11-15",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "location": "Auditorium",
+            "conductor": "Conductor X",
+            "repertoire": "Chamber Concert",
+            "ensembles": ["CamFil", "PILTRI", "ECAS"]
+        },
+        {
+            "date": "2024-11-30",
+            "startTime": "15:00",
+            "endTime": "17:00",
+            "location": "Concert Hall 2",
+            "conductor": "Conductor Y",
+            "repertoire": "Orchestral Suite",
+            "ensembles": ["ECAS", "TREPUN", "EnsMar", "VN"]
+        },
+        {
+            "date": "2024-12-05",
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "location": "Community Center",
+            "conductor": "Conductor Z",
+            "repertoire": "Piano Concerto",
+            "ensembles": ["ECAS", "VS", "ABRON"]
+        },
+        {
+            "date": "2024-12-20",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "location": "Auditorium",
+            "conductor": "Conductor AA",
+            "repertoire": "Chamber Music",
+            "ensembles": ["ECAS", "PILTRI", "EnsMon", "CPAT"]
         }
     ]
 }
