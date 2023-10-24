@@ -1,79 +1,81 @@
 {
-    "ensembles": [
+  "ensembles": [
       {
-        "name": "Orchestra"
+          "name": "ECAS"
       },
       {
-        "name": "Local Ensemble 1"
+          "name": "CAV"
       },
       {
-        "name": "Local Ensemble 2"
+          "name": "PILTRI"
       },
       {
-        "name": "Local Ensemble 3"
+          "name": "TREPUN"
       },
       {
-        "name": "Local Ensemble 4"
+          "name": "ES"
       },
       {
-        "name": "Local Ensemble 5"
+          "name": "VN"
       },
       {
-        "name": "Local Ensemble 6"
+          "name": "PV"
       },
       {
-        "name": "Local Ensemble 7"
+          "name": "CPAT"
       },
       {
-        "name": "Local Ensemble 8"
+          "name": "VS"
       },
       {
-        "name": "Local Ensemble 9"
+          "name": "BRAT"
       },
       {
-        "name": "Local Ensemble 10"
+          "name": "ABRON"
       },
       {
-        "name": "Local Ensemble 11"
+          "name": "INT"
       },
       {
-        "name": "Regional Ensemble 1"
+          "name": "CamFil"
       },
       {
-        "name": "Regional Ensemble 2"
+          "name": "EnsMon"
       },
       {
-        "name": "Regional Ensemble 3"
+          "name": "EnsVal"
+      },
+      {
+          "name": "EnsMar"
       }
-    ],
-    "events": [
+  ],
+  "events": [
       {
-        "date": "2023-10-25",
-        "startTime": "19:30",
-        "endTime": "21:30",
-        "location": "Concert Hall 1",
-        "conductor": "Conductor A",
-        "repertoire": "Symphony No. 1",
-        "ensembles": ["Orchestra", "Local Ensemble 1", "Regional Ensemble 1"]
+          "date": "2023-10-25",
+          "startTime": "19:30",
+          "endTime": "21:30",
+          "location": "Concert Hall 1",
+          "conductor": "Conductor A",
+          "repertoire": "Symphony No. 1",
+          "ensembles": ["ECAS", "CAV", "INT"]
       },
       {
-        "date": "2023-10-28",
-        "startTime": "20:00",
-        "endTime": "22:00",
-        "location": "Concert Hall 2",
-        "conductor": "Conductor B",
-        "repertoire": "Chamber Music",
-        "ensembles": ["Orchestra", "Local Ensemble 2", "Regional Ensemble 2"]
+          "date": "2023-10-28",
+          "startTime": "20:00",
+          "endTime": "22:00",
+          "location": "Concert Hall 2",
+          "conductor": "Conductor B",
+          "repertoire": "Chamber Music",
+          "ensembles": ["ECAS", "PILTRI", "CamFil"]
       },
       {
-        "date": "2023-11-05",
-        "startTime": "15:00",
-        "endTime": "17:00",
-        "location": "Community Center",
-        "conductor": "Conductor C",
-        "repertoire": "String Quartet",
-        "ensembles": ["Orchestra", "Local Ensemble 3", "Regional Ensemble 3"]
+          "date": "2023-11-05",
+          "startTime": "15:00",
+          "endTime": "17:00",
+          "location": "Community Center",
+          "conductor": "Conductor C",
+          "repertoire": "String Quartet",
+          "ensembles": ["ECAS", "TREPUN", "EnsMar"]
       }
-      
-    ]
-  }
+  ]
+}
