@@ -37,7 +37,8 @@
             "name": "INT"
         },
         {
-            "name": "CamFil"
+            "name": "CamFil",
+            "children": ["ES", "CAV", "ECAS", "VN", "CPAT","PILTRI"]
         },
         {
             "name": "EnsMon",
