@@ -1,6 +1,44 @@
+/* Center the elements of the ensemble checkboxes grid */
+.ensemble-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 5 rows */
+    gap: 10px; /* Adjust the gap between checkboxes as needed */
+    justify-items: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+.ensemble-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgb(189, 186, 186);
+    width: 100%;
+}
+
+
+.ensemble-container label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.ensemble-checkbox {
+    margin: 0; /* Remove margin to align with text */
+}
+
+.ensemble-container input[type="checkbox"] {
+    margin: 0 5px; /* Adjust the margin as needed */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    font-size: 25px;
 }
 
 header {
@@ -15,6 +53,11 @@ header img {
 
 h1 {
     color: #333;
+    font-size: 50px;
+}
+.filters
+{
+    font-size: 25px;
 }
 
 #ensembleDropdown {
@@ -32,4 +75,46 @@ h1 {
 
 #agendaList li {
     margin-bottom: 10px;
+}
+
+.ensemble-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 5 rows */
+    gap: 10px; /* Adjust the gap between checkboxes as needed */
+    justify-items: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+.ensemble-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgb(189, 186, 186);
+    width: 100%;
+    font-size: 25px;
+}
+button{
+    font-size: 20px;
+}
+
+.ensemble-container label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.ensemble-checkbox {
+    margin: 0; /* Remove margin to align with text */
+}
+
+#startDate, #endDate {
+    width: 200px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    font-size: 20px;
 }

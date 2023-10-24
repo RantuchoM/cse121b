@@ -51,14 +51,39 @@ function filterAndDisplayEvents() {
         .filter(checkbox => checkbox.checked)
         .map(checkbox => checkbox.value);
 
+    // Function to format a date as "dd month yyyy"
+    function formatDate(dateStr) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return new Date(dateStr).toLocaleDateString(undefined, options);
+    }
+
+    // Function to format the time as "hh:mm - hh:mm hs"
+    function formatTime(startTime, endTime) {
+        return `${startTime} - ${endTime} hs`;
+    }
+
+    // Function to create a separator line
+    function createSeparator() {
+        return document.createElement('hr');
+    }
+
     // Filter and display events for the selected ensembles and within the date range.
     data.events.forEach(event => {
         const eventDate = new Date(event.date + 'T' + event.startTime);
         const isDateInRange = (!startDate || eventDate >= startDate) && (!endDate || eventDate <= endDate);
         if (isDateInRange && event.ensembles.some(ensemble => ensemblesToDisplay.includes(ensemble))) {
             const listItem = document.createElement('li');
-            listItem.textContent = `${event.date}: ${event.startTime} - ${event.endTime}, ${event.location}, Conductor: ${event.conductor}, Repertoire: ${event.repertoire}`;
+
+            // Event location formatted as a header
+            listItem.innerHTML = `<b>${event.location.toUpperCase()}</b><br>`;
+
+            // Date formatted as "dd month yyyy"
+            listItem.innerHTML += formatDate(event.date) + ' - ' + formatTime(event.startTime, event.endTime) + '<br>';
+            listItem.innerHTML += `CONDUCTOR: ${event.conductor}<br>`;
+            listItem.innerHTML += `REPERTOIRE: ${event.repertoire}`;
+            
             agendaList.appendChild(listItem);
+            agendaList.appendChild(createSeparator());
         }
     });
 }
@@ -71,19 +96,25 @@ fetch(jsonDataUrl)
 
         // Create checkboxes for ensembles and add to the page
         data.ensembles.forEach((ensemble) => {
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.id = ensemble.name;
-            checkbox.value = ensemble.name;
-            ensembleCheckboxes.appendChild(checkbox);
-
-            // Store checkboxes in the map
-            ensembleCheckboxesMap[ensemble.name] = checkbox;
+            const ensembleContainer = document.createElement('div');
+            ensembleContainer.classList.add('ensemble-container');
 
             const label = document.createElement('label');
             label.setAttribute('for', ensemble.name);
             label.textContent = ensemble.name;
-            ensembleCheckboxes.appendChild(label);
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.id = ensemble.name;
+            checkbox.value = ensemble.name;
+            checkbox.classList.add('ensemble-checkbox');
+
+            label.prepend(checkbox); // Place the checkbox inside the label
+
+            ensembleContainer.appendChild(label);
+
+            ensembleCheckboxes.appendChild(ensembleContainer);
+            ensembleCheckboxesMap[ensemble.name] = checkbox;
         });
 
         // Add triggers to checkboxes

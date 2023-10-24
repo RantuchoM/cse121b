@@ -57,7 +57,28 @@
             "endTime": "21:30",
             "location": "Concert Hall 1",
             "conductor": "Conductor A",
-            "repertoire": "Symphony No. 1",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Symphony No. 1"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Piano Concerto No. 20"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Swan Lake Suite"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Brandenburg Concerto No. 3"
+                },
+                {
+                    "composer": "Haydn, Joseph",
+                    "title": "String Quartet in C Major"
+                }
+            ],
             "ensembles": ["CamFil"]
         },
         {
@@ -66,7 +87,28 @@
             "endTime": "22:00",
             "location": "Concert Hall 2",
             "conductor": "Conductor B",
-            "repertoire": "Chamber Music",
+            "repertoire": [
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Chamber Music"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Violin Concerto"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "Piano Quintet"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Serenade for Strings"
+                },
+                {
+                    "composer": "Haydn, Joseph",
+                    "title": "String Quartet in D Major"
+                }
+            ],
             "ensembles": ["ECAS", "PILTRI", "CamFil"]
         },
         {
@@ -75,7 +117,28 @@
             "endTime": "17:00",
             "location": "Community Center",
             "conductor": "Conductor C",
-            "repertoire": "String Quartet",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "String Quartet No. 8"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Octet in E-flat Major"
+                },
+                {
+                    "composer": "Debussy, Claude",
+                    "title": "String Quartet"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Death and the Maiden"
+                },
+                {
+                    "composer": "Borodin, Alexander",
+                    "title": "String Quartet No. 2"
+                }
+            ],
             "ensembles": ["ECAS", "TREPUN", "EnsMar"]
         },
         {
@@ -84,7 +147,28 @@
             "endTime": "16:00",
             "location": "Auditorium",
             "conductor": "Conductor D",
-            "repertoire": "Orchestral Suite",
+            "repertoire": [
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Orchestral Suite"
+                },
+                {
+                    "composer": "Vivaldi, Antonio",
+                    "title": "Four Seasons"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Violin Concerto in A Minor"
+                },
+                {
+                    "composer": "Handel, George Frideric",
+                    "title": "Water Music"
+                },
+                {
+                    "composer": "Pachelbel, Johann",
+                    "title": "Canon in D"
+                }
+            ],
             "ensembles": ["ECAS"]
         },
         {
@@ -93,7 +177,28 @@
             "endTime": "21:30",
             "location": "Concert Hall 1",
             "conductor": "Conductor E",
-            "repertoire": "Chamber Concert",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Chamber Concert"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Piano Concerto No. 21"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "String Quartet No. 1"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Piano Trio"
+                },
+                {
+                    "composer": "Haydn, Joseph",
+                    "title": "String Quartet in G Major"
+                }
+            ],
             "ensembles": ["CamFil"]
         },
         {
@@ -102,7 +207,28 @@
             "endTime": "22:00",
             "location": "Auditorium",
             "conductor": "Conductor F",
-            "repertoire": "String Quartet",
+            "repertoire": [
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Symphony No. 4"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "String Quartet No. 14"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Violin Concerto in E Major"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Serenade for Strings"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Piano Sonata No. 8"
+                }
+            ],
             "ensembles": ["CAV"]
         },
         {
@@ -111,7 +237,28 @@
             "endTime": "17:00",
             "location": "Community Center",
             "conductor": "Conductor G",
-            "repertoire": "Symphony No. 2",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Symphony No. 2"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Flute Concerto No. 1"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "Piano Quartet No. 2"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Octet in E-flat Major"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "String Quartet No. 15"
+                }
+            ],
             "ensembles": ["ECAS", "PILTRI"]
         },
         {
@@ -120,7 +267,28 @@
             "endTime": "20:30",
             "location": "Concert Hall 2",
             "conductor": "Conductor H",
-            "repertoire": "Piano Concerto",
+            "repertoire": [
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Piano Concerto No. 1"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Symphony No. 7"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Cello Suite No. 1"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Piano Trio No. 1"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Horn Concerto No. 2"
+                }
+            ],
             "ensembles": ["ECAS", "TREPUN", "EnsMar"]
         },
         {
@@ -129,7 +297,28 @@
             "endTime": "21:00",
             "location": "Auditorium",
             "conductor": "Conductor I",
-            "repertoire": "Chamber Music",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Chamber Music"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "String Quartet No. 2"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Symphony No. 41"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Piano Concerto No. 2"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "String Quartet No. 12"
+                }
+            ],
             "ensembles": ["ECAS", "CamFil"]
         },
         {
@@ -138,7 +327,28 @@
             "endTime": "16:00",
             "location": "Community Center",
             "conductor": "Conductor J",
-            "repertoire": "String Quartet",
+            "repertoire": [
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "String Quartet No. 6"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Piano Concerto No. 4"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "String Quintet No. 4"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Symphony No. 5"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Orchestral Suite No. 2"
+                }
+            ],
             "ensembles": ["CAV", "ES", "VN"]
         },
         {
@@ -147,7 +357,28 @@
             "endTime": "21:30",
             "location": "Concert Hall 1",
             "conductor": "Conductor K",
-            "repertoire": "Symphony No. 3",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Symphony No. 3"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Serenade for Winds"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "Symphony No. 2"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Violin Concerto"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Piano Quintet"
+                }
+            ],
             "ensembles": ["ECAS", "VS"]
         },
         {
@@ -156,7 +387,28 @@
             "endTime": "22:00",
             "location": "Auditorium",
             "conductor": "Conductor L",
-            "repertoire": "Chamber Concert",
+            "repertoire": [
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Piano Concerto No. 2"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Symphony No. 40"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Brandenburg Concerto No. 2"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "String Quartet No. 9"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Symphony No. 4"
+                }
+            ],
             "ensembles": ["CamFil", "PILTRI"]
         },
         {
@@ -165,7 +417,28 @@
             "endTime": "17:00",
             "location": "Concert Hall 2",
             "conductor": "Conductor M",
-            "repertoire": "Orchestral Suite",
+            "repertoire": [
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Symphony No. 8"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "Piano Concerto No. 2"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "String Quartet No. 15"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Violin Concerto"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Swan Lake Suite"
+                }
+            ],
             "ensembles": ["ECAS", "TREPUN", "EnsMar"]
         },
         {
@@ -174,7 +447,28 @@
             "endTime": "20:30",
             "location": "Community Center",
             "conductor": "Conductor N",
-            "repertoire": "Piano Concerto",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Symphony No. 5"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "String Quartet No. 2"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Requiem"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Romeo and Juliet Overture"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Cello Suite No. 3"
+                }
+            ],
             "ensembles": ["ECAS", "VS", "ABRON"]
         },
         {
@@ -183,7 +477,28 @@
             "endTime": "21:00",
             "location": "Auditorium",
             "conductor": "Conductor O",
-            "repertoire": "Chamber Music",
+            "repertoire": [
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Symphony No. 41"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Symphony No. 5"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Piano Concerto No. 4"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "Piano Quintet"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Serenade for Strings"
+                }
+            ],
             "ensembles": ["ECAS", "PILTRI", "EnsMon", "CPAT"]
         },
         {
@@ -192,7 +507,28 @@
             "endTime": "16:00",
             "location": "Concert Hall 1",
             "conductor": "Conductor P",
-            "repertoire": "String Quartet",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Piano Sonata No. 14"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Symphony No. 39"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Cello Suite No. 5"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Symphony No. 9"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Piano Concerto No. 3"
+                }
+            ],
             "ensembles": ["CAV", "ES"]
         },
         {
@@ -201,7 +537,28 @@
             "endTime": "21:30",
             "location": "Community Center",
             "conductor": "Conductor Q",
-            "repertoire": "Symphony No. 4",
+            "repertoire": [
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "A Midsummer Night's Dream"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Symphony No. 6"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Clarinet Concerto"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Violin Concerto in A Minor"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Serenade for Winds"
+                }
+            ],
             "ensembles": ["ECAS", "VS", "TREPUN"]
         },
         {
@@ -210,7 +567,28 @@
             "endTime": "22:00",
             "location": "Auditorium",
             "conductor": "Conductor R",
-            "repertoire": "Chamber Concert",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Chamber Concerto"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Sinfonia Concertante"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "String Quartet No. 3"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Piano Concerto No. 1"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Hebrides Overture"
+                }
+            ],
             "ensembles": ["CamFil", "PV"]
         },
         {
@@ -219,7 +597,28 @@
             "endTime": "17:00",
             "location": "Concert Hall 2",
             "conductor": "Conductor S",
-            "repertoire": "Orchestral Suite",
+            "repertoire": [
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Symphony No. 6"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Piano Concerto No. 3"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Flute Quartet"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Concerto for Two Violins"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Romeo and Juliet Overture"
+                }
+            ],
             "ensembles": ["ECAS", "PILTRI", "EnsMon", "CPAT"]
         },
         {
@@ -228,8 +627,29 @@
             "endTime": "20:30",
             "location": "Community Center",
             "conductor": "Conductor T",
-            "repertoire": "Piano Concerto",
-            "ensembles": ["ECAS", "VS", "ABRON"]
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Symphony No. 9"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Piano Concerto No. 1"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "String Quartet No. 16"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Serenade for Strings"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Goldberg Variations"
+                }
+            ],
+            "ensembles": ["CamFil", "BRAT"]
         },
         {
             "date": "2024-09-20",
@@ -237,8 +657,29 @@
             "endTime": "21:00",
             "location": "Auditorium",
             "conductor": "Conductor U",
-            "repertoire": "Chamber Music",
-            "ensembles": ["ECAS", "PILTRI", "EnsMar"]
+            "repertoire": [
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Symphony No. 38"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Symphony No. 3"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Violin Concerto"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "Symphony No. 4"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Piano Concerto No. 4"
+                }
+            ],
+            "ensembles": ["VN", "CAV", "ABRON", "CPAT"]
         },
         {
             "date": "2024-10-10",
@@ -246,53 +687,149 @@
             "endTime": "16:00",
             "location": "Concert Hall 1",
             "conductor": "Conductor V",
-            "repertoire": "String Quartet",
-            "ensembles": ["CAV", "PV"]
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Piano Sonata No. 17"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Symphony No. 29"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Orchestral Suite No. 3"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Symphony No. 2"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Piano Concerto No. 5"
+                }
+            ],
+            "ensembles": ["CamFil", "VS"]
         },
         {
-            "date": "2024-10-20",
-            "startTime": "19:30",
-            "endTime": "21:30",
-            "location": "Community Center",
-            "conductor": "Conductor W",
-            "repertoire": "Symphony No. 5",
-            "ensembles": ["ECAS", "VS", "TREPUN", "CPAT"]
-        },
-        {
-            "date": "2024-11-15",
+            "date": "2024-10-28",
             "startTime": "20:00",
             "endTime": "22:00",
             "location": "Auditorium",
-            "conductor": "Conductor X",
-            "repertoire": "Chamber Concert",
-            "ensembles": ["CamFil", "PILTRI", "ECAS"]
+            "conductor": "Conductor W",
+            "repertoire": [
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Overture to A Midsummer Night's Dream"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Symphony No. 8"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Horn Concerto No. 4"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Swan Lake Suite"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Cello Suite No. 6"
+                }
+            ],
+            "ensembles": ["ECAS", "PILTRI", "EnsMon"]
         },
         {
-            "date": "2024-11-30",
+            "date": "2024-11-05",
             "startTime": "15:00",
             "endTime": "17:00",
-            "location": "Concert Hall 2",
-            "conductor": "Conductor Y",
-            "repertoire": "Orchestral Suite",
-            "ensembles": ["ECAS", "TREPUN", "EnsMar", "VN"]
-        },
-        {
-            "date": "2024-12-05",
-            "startTime": "18:30",
-            "endTime": "20:30",
             "location": "Community Center",
-            "conductor": "Conductor Z",
-            "repertoire": "Piano Concerto",
-            "ensembles": ["ECAS", "VS", "ABRON"]
+            "conductor": "Conductor X",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Symphony No. 4"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Serenade for Winds"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "Violin Concerto"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Piano Quartet No. 3"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Piano Sonata No. 21"
+                }
+            ],
+            "ensembles": ["CAV", "VN"]
         },
         {
-            "date": "2024-12-20",
+            "date": "2024-11-20",
             "startTime": "19:00",
             "endTime": "21:00",
+            "location": "Concert Hall 2",
+            "conductor": "Conductor Y",
+            "repertoire": [
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Symphony No. 25"
+                },
+                {
+                    "composer": "Schubert, Franz",
+                    "title": "Symphony No. 1"
+                },
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Piano Concerto No. 5"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Piano Trio"
+                },
+                {
+                    "composer": "Bach, Johann Sebastian",
+                    "title": "Brandenburg Concerto No. 6"
+                }
+            ],
+            "ensembles": ["ECAS", "BRAT"]
+        },
+        {
+            "date": "2024-12-10",
+            "startTime": "14:00",
+            "endTime": "16:00",
             "location": "Auditorium",
-            "conductor": "Conductor AA",
-            "repertoire": "Chamber Music",
-            "ensembles": ["ECAS", "PILTRI", "EnsMon", "CPAT"]
+            "conductor": "Conductor Z",
+            "repertoire": [
+                {
+                    "composer": "Beethoven, Ludwig van",
+                    "title": "Piano Sonata No. 8"
+                },
+                {
+                    "composer": "Mendelssohn, Felix",
+                    "title": "Symphony No. 3"
+                },
+                {
+                    "composer": "Mozart, Wolfgang Amadeus",
+                    "title": "Clarinet Quintet"
+                },
+                {
+                    "composer": "Brahms, Johannes",
+                    "title": "Symphony No. 3"
+                },
+                {
+                    "composer": "Tchaikovsky, Pyotr Ilyich",
+                    "title": "Serenade for Strings"
+                }
+            ],
+            "ensembles": ["CamFil", "CPAT", "VS"]
         }
     ]
 }

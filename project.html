@@ -10,18 +10,18 @@
     <div class="container">
         <h1>Orchestra Events</h1>
         <div class="filters">
-            <h2>Ensembles:</h2>
-            <div id="ensembleCheckboxes">
-                <!-- Checkboxes populated via JavaScript -->
-            </div>
             <label for="startDate">Start Date:</label>
             <input type="date" id="startDate">
-            <label for="endDate">End Date:</label>
+            <label for "endDate">End Date:</label>
             <input type="date" id="endDate">
-            <button id="checkAllButton">Check All</button>
-            <button id="uncheckAllButton">Uncheck All</button>
-            <button id="filterButton">Filter</button>
         </div>
+        
+        <div id="ensembleCheckboxes" class="ensemble-grid">
+            <!-- Ensemble checkboxes will be generated here -->
+        </div>
+        <button id="checkAllButton">Check All</button>
+        <button id="uncheckAllButton">Uncheck All</button>
+        <button id="filterButton">Filter</button>
         <ul id="agendaList"></ul>
     </div>
     <script src="scripts/project.js"></script>
