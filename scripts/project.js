@@ -1,5 +1,5 @@
 // Sample JSON data URL, you can replace it with the actual URL.
-const jsonDataUrl = 'https://example.com/orchestra_agenda.json';
+const jsonDataUrl = 'https://raw.githubusercontent.com/RantuchoM/cse121b/main/jsons/json.json';
 
 // Fetch data from the JSON URL and populate the dropdown.
 fetch(jsonDataUrl)
