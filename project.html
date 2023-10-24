@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Orchestra Agenda</title>
     <link rel="stylesheet" type="text/css" href="styles/project.css">
 </head>
 <body>
     <header>
         <img src="images/header.jpg" alt="Orchestra Header">
     </header>
-
-    <h1>Orchestra Agenda</h1>
-    <label for="ensembleDropdown">Select Ensemble:</label>
-    <select id="ensembleDropdown"></select>
-    <div id="agendaContainer">
-        <h2>Agenda for the Selected Ensemble</h2>
+    <div class="container">
+        <h1>Orchestra Events</h1>
+        <div class="filters">
+            <h2>Ensembles:</h2>
+            <div id="ensembleCheckboxes">
+                <!-- Checkboxes populated via JavaScript -->
+            </div>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate">
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate">
+            <button id="checkAllButton">Check All</button>
+            <button id="uncheckAllButton">Uncheck All</button>
+            <button id="filterButton">Filter</button>
+        </div>
         <ul id="agendaList"></ul>
     </div>
-
     <script src="scripts/project.js"></script>
 </body>
 </html>

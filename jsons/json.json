@@ -34,9 +34,6 @@
             "name": "ABRON"
         },
         {
-            "name": "INT"
-        },
-        {
             "name": "CamFil",
             "children": ["ES", "CAV", "ECAS", "VN", "CPAT", "PILTRI"]
         },
@@ -187,7 +184,7 @@
             "location": "Auditorium",
             "conductor": "Conductor O",
             "repertoire": "Chamber Music",
-            "ensembles": ["ECAS", "PILTRI", "EnsMon"]
+            "ensembles": ["ECAS", "PILTRI", "EnsMon", "CPAT"]
         },
         {
             "date": "2024-07-10",
