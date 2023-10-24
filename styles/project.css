@@ -3,6 +3,16 @@ body {
     text-align: center;
 }
 
+header {
+    background: black; /* Change this to the background color you prefer */
+    padding: 0 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%; /* Ensures the image scales to fit the header */
+}
+
 h1 {
     color: #333;
 }
