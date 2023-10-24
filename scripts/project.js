@@ -67,6 +67,21 @@ function filterAndDisplayEvents() {
         return document.createElement('hr');
     }
 
+    // Function to display repertoire as lines with minimal separation
+    function displayRepertoire(repertoire) {
+        const repertoireContainer = document.createElement('div');
+        repertoireContainer.classList.add('repertoire-container');
+        
+        repertoire.forEach(piece => {
+            const repertoireLine = document.createElement('span');
+            repertoireLine.textContent = `♫ ${piece.composer} - ${piece.title}`;
+            repertoireContainer.appendChild(repertoireLine);
+            repertoireContainer.appendChild(document.createElement('br')); // Add a line break
+        });
+        
+        return repertoireContainer;
+    }
+
     // Filter and display events for the selected ensembles and within the date range.
     data.events.forEach(event => {
         const eventDate = new Date(event.date + 'T' + event.startTime);
@@ -80,8 +95,11 @@ function filterAndDisplayEvents() {
             // Date formatted as "dd month yyyy"
             listItem.innerHTML += formatDate(event.date) + ' - ' + formatTime(event.startTime, event.endTime) + '<br>';
             listItem.innerHTML += `CONDUCTOR: ${event.conductor}<br>`;
-            listItem.innerHTML += `REPERTOIRE: ${event.repertoire}`;
-            
+
+            // Display repertoire as an unordered list
+            listItem.innerHTML += '<br><span style="font-style: italic; text-decoration: underline;">REPERTOIRE</span><br>';
+            listItem.appendChild(displayRepertoire(event.repertoire));
+
             agendaList.appendChild(listItem);
             agendaList.appendChild(createSeparator());
         }
