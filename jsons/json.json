@@ -743,6 +743,556 @@
         },
         {
             "date": "2024-11-05",
+            "startTime": "19:30",
+            "endTime": "21:30",
+            "location": "Grand Hall",
+            "conductor": "Conductor X",
+            "repertoire": [
+              {
+                "composer": "Brahms, Johannes",
+                "title": "Symphony No. 3"
+              },
+              {
+                "composer": "Haydn, Franz Joseph",
+                "title": "Cello Concerto No. 1"
+              },
+              {
+                "composer": "Schumann, Robert",
+                "title": "Piano Concerto"
+              }
+            ],
+            "ensembles": ["ECAS"]
+          },
+          {
+            "date": "2024-11-10",
+            "startTime": "18:45",
+            "endTime": "20:30",
+            "location": "Community Center",
+            "conductor": "Conductor Y",
+            "repertoire": [
+              {
+                "composer": "Mozart, Wolfgang Amadeus",
+                "title": "Symphony No. 40"
+              },
+              {
+                "composer": "Tchaikovsky, Pyotr Ilyich",
+                "title": "Piano Concerto No. 1"
+              },
+              {
+                "composer": "Schubert, Franz",
+                "title": "Unfinished Symphony"
+              }
+            ],
+            "ensembles": ["PILTRI"]
+          },
+          {
+            "date": "2024-11-12",
+            "startTime": "20:15",
+            "endTime": "22:15",
+            "location": "Auditorium",
+            "conductor": "Conductor Z",
+            "repertoire": [
+              {
+                "composer": "Chopin, Frédéric",
+                "title": "Piano Concerto No. 1"
+              },
+              {
+                "composer": "Mendelssohn, Felix",
+                "title": "Symphony No. 4"
+              },
+              {
+                "composer": "Beethoven, Ludwig van",
+                "title": "Violin Concerto"
+              }
+            ],
+            "ensembles": ["EnsMon"]
+          },
+          {
+            "date": "2024-11-17",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "location": "Symphony Hall",
+            "conductor": "Conductor A",
+            "repertoire": [
+              {
+                "composer": "Tchaikovsky, Pyotr Ilyich",
+                "title": "1812 Overture"
+              },
+              {
+                "composer": "Bach, Johann Sebastian",
+                "title": "Brandenburg Concerto No. 3"
+              },
+              {
+                "composer": "Vivaldi, Antonio",
+                "title": "The Four Seasons"
+              }
+            ],
+            "ensembles": ["ECAS", "PILTRI"]
+          },
+          {
+            "date": "2024-11-19",
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "location": "Grand Hall",
+            "conductor": "Conductor B",
+            "repertoire": [
+              {
+                "composer": "Mozart, Wolfgang Amadeus",
+                "title": "Requiem"
+              },
+              {
+                "composer": "Schubert, Franz",
+                "title": "Symphony No. 9"
+              },
+              {
+                "composer": "Beethoven, Ludwig van",
+                "title": "Piano Sonata No. 14"
+              }
+            ],
+            "ensembles": ["PILTRI"]
+          },
+          {
+            "date": "2024-11-25",
+            "startTime": "19:15",
+            "endTime": "21:15",
+            "location": "Community Center",
+            "conductor": "Conductor C",
+            "repertoire": [
+              {
+                "composer": "Brahms, Johannes",
+                "title": "Violin Concerto"
+              },
+              {
+                "composer": "Tchaikovsky, Pyotr Ilyich",
+                "title": "Swan Lake Suite"
+              },
+              {
+                "composer": "Schumann, Robert",
+                "title": "Symphony No. 2"
+              }
+            ],
+            "ensembles": ["ECAS", "EnsMon"]
+          },
+          {
+            "date": "2024-12-03",
+            "startTime": "19:45",
+            "endTime": "21:45",
+            "location": "Auditorium",
+            "conductor": "Conductor D",
+            "repertoire": [
+              {
+                "composer": "Mendelssohn, Felix",
+                "title": "Hebrides Overture"
+              },
+              {
+                "composer": "Haydn, Franz Joseph",
+                "title": "Symphony No. 104"
+              },
+              {
+                "composer": "Vivaldi, Antonio",
+                "title": "Guitar Concerto in D"
+              }
+            ],
+            "ensembles": ["PILTRI", "EnsMon"]
+          },
+          {
+            "date": "2024-12-08",
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "location": "Symphony Hall",
+            "conductor": "Conductor E",
+            "repertoire": [
+              {
+                "composer": "Chopin, Frédéric",
+                "title": "Prelude in D-flat Major"
+              },
+              {
+                "composer": "Mozart, Wolfgang Amadeus",
+                "title": "Serenade No. 10"
+              },
+              {
+                "composer": "Beethoven, Ludwig van",
+                "title": "Symphony No. 7"
+              }
+            ],
+            "ensembles": ["ECAS"]
+          },
+          {
+            "date": "2024-12-11",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "location": "Grand Hall",
+            "conductor": "Conductor F",
+            "repertoire": [
+              {
+                "composer": "Bach, Johann Sebastian",
+                "title": "Magnificat"
+              },
+              {
+                "composer": "Schubert, Franz",
+                "title": "Symphony No. 5"
+              },
+              {
+                "composer": "Tchaikovsky, Pyotr Ilyich",
+                "title": "Piano Concerto No. 2"
+              }
+            ],
+            "ensembles": ["PILTRI"]
+          },
+          {
+            "date": "2024-12-15",
+            "startTime": "19:15",
+            "endTime": "21:15",
+            "location": "Community Center",
+            "conductor": "Conductor G",
+            "repertoire": [
+              {
+                "composer": "Vivaldi, Antonio",
+                "title": "Flute Concerto in G"
+              },
+              {
+                "composer": "Brahms, Johannes",
+                "title": "Symphony No. 1"
+              },
+              {
+                "composer": "Mozart, Wolfgang Amadeus",
+                "title": "Clarinet Concerto"
+              }
+            ],
+            "ensembles": ["ECAS", "PILTRI", "EnsMon"]
+          },
+          {
+            "date": "2025-01-02",
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "location": "Auditorium",
+            "conductor": "Conductor H",
+            "repertoire": [
+              {
+                "composer": "Mendelssohn, Felix",
+                "title": "Violin Concerto"
+              },
+              {
+                "composer": "Chopin, Frédéric",
+                "title": "Symphony No. 3"
+              },
+              {
+                "composer": "Tchaikovsky, Pyotr Ilyich",
+                "title": "Eugene Onegin"
+              }
+            ],
+            "ensembles": ["ECAS"]
+          },
+          {
+            "date": "2025-01-07",
+            "startTime": "19:45",
+            "endTime": "21:45",
+            "location": "Symphony Hall",
+            "conductor": "Conductor I",
+            "repertoire": [
+              {
+                "composer": "Haydn, Franz Joseph",
+                "title": "Trumpet Concerto"
+              },
+              {
+                "composer": "Schumann, Robert",
+                "title": "Cello Concerto"
+              },
+              {
+                "composer": "Bach, Johann Sebastian",
+                "title": "Orchestral Suite No. 2"
+              }
+            ],
+            "ensembles": ["PILTRI"]
+          },
+          {
+            "date": "2025-01-11",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "location": "Grand Hall",
+            "conductor": "Conductor J",
+            "repertoire": [
+              {
+                "composer": "Beethoven, Ludwig van",
+                "title": "Symphony No. 6"
+              },
+              {
+                "composer": "Mozart, Wolfgang Amadeus",
+                "title": "Piano Concerto No. 24"
+              },
+              {
+                "composer": "Schubert, Franz",
+                "title": "Symphony No. 6"
+              }
+            ],
+            "ensembles": ["EnsMon"]
+          },
+          {
+            "date": "2025-01-16",
+            "startTime": "19:30",
+            "endTime": "21:30",
+            "location": "Community Center",
+            "conductor": "Conductor K",
+            "repertoire": [
+              {
+                "composer": "Chopin, Frédéric",
+                "title": "Piano Concerto No. 2"
+              },
+              {
+                "composer": "Vivaldi, Antonio",
+                "title": "Bassoon Concerto"
+              },
+              {
+                "composer": "Brahms, Johannes",
+                "title": "Symphony No. 2"
+              }
+            ],
+            "ensembles": ["ECAS", "PILTRI"]
+          },
+          {
+            "date": "2025-01-21",
+            "startTime": "20:15",
+            "endTime": "22:15",
+            "location": "Auditorium",
+            "conductor": "Conductor L",
+            "repertoire": [
+              {
+                "composer": "Mendelssohn, Felix",
+                "title": "Symphony No. 5"
+              },
+              {
+                "composer": "Haydn, Franz Joseph",
+                "title": "Symphony No. 102"
+              },
+              {
+                "composer": "Tchaikovsky, Pyotr Ilyich",
+                "title": "Romeo and Juliet Overture"
+              }
+            ],
+            "ensembles": ["ECAS", "EnsMon"]
+          },
+          {
+            "date": "2025-01-25",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "location": "Symphony Hall",
+            "conductor": "Conductor M",
+            "repertoire": [
+              {
+                "composer": "Bach, Johann Sebastian",
+                "title": "St. Matthew Passion"
+              },
+              {
+                "composer": "Schumann, Robert",
+                "title": "Piano Concerto"
+              },
+              {
+                "composer": "Vivaldi, Antonio",
+                "title": "Concerto for Two Violins"
+              }
+            ],
+            "ensembles": ["PILTRI", "EnsMon"]
+          },
+          {
+            "date": "2025-01-30",
+            "startTime": "19:30",
+            "endTime": "21:30",
+            "location": "Grand Hall",
+            "conductor": "Conductor N",
+            "repertoire": [
+              {
+                "composer": "Mozart, Wolfgang Amadeus",
+                "title": "Symphony No. 41"
+              },
+              {
+                "composer": "Beethoven, Ludwig van",
+                "title": "Violin Concerto"
+              },
+              {
+                "composer": "Tchaikovsky, Pyotr Ilyich",
+                "title": "Serenade for Strings"
+              }
+            ],
+            "ensembles": ["ECAS"]
+          },
+          {
+            "date": "2025-02-05",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "location": "Auditorium",
+            "conductor": "Conductor O",
+            "repertoire": [
+              {
+                "composer": "Chopin, Frédéric",
+                "title": "Piano Concerto No. 1"
+              },
+              {
+                "composer": "Mendelssohn, Felix",
+                "title": "Symphony No. 3"
+              },
+              {
+                "composer": "Brahms, Johannes",
+                "title": "Tragic Overture"
+              }
+            ],
+            "ensembles": ["PILTRI"]
+          },
+          {
+            "date": "2025-02-10",
+            "startTime": "19:15",
+            "endTime": "21:15",
+            "location": "Community Center",
+            "conductor": "Conductor P",
+            "repertoire": [
+              {
+                "composer": "Vivaldi, Antonio",
+                "title": "Bassoon Concerto"
+              },
+              {
+                "composer": "Bach, Johann Sebastian",
+                "title": "Orchestral Suite No. 3"
+              },
+              {
+                "composer": "Schumann, Robert",
+                "title": "Symphony No. 4"
+              }
+            ],
+            "ensembles": ["ECAS", "PILTRI", "EnsMon"]
+          },
+          {
+            "date": "2025-02-14",
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "location": "Symphony Hall",
+            "conductor": "Conductor Q",
+            "repertoire": [
+              {
+                "composer": "Haydn, Franz Joseph",
+                "title": "Symphony No. 103"
+              },
+              {
+                "composer": "Beethoven, Ludwig van",
+                "title": "Symphony No. 5"
+              },
+              {
+                "composer": "Mozart, Wolfgang Amadeus",
+                "title": "Flute Concerto"
+              }
+            ],
+            "ensembles": ["ECAS"]
+          },
+          {
+            "date": "2025-02-19",
+            "startTime": "19:45",
+            "endTime": "21:45",
+            "location": "Grand Hall",
+            "conductor": "Conductor R",
+            "repertoire": [
+              {
+                "composer": "Schubert, Franz",
+                "title": "Symphony No. 8"
+              },
+              {
+                "composer": "Tchaikovsky, Pyotr Ilyich",
+                "title": "Symphony No. 4"
+              },
+              {
+                "composer": "Chopin, Frédéric",
+                "title": "Piano Sonata No. 2"
+              }
+            ],
+            "ensembles": ["PILTRI", "EnsMon"]
+          },
+          {
+            "date": "2025-02-25",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "location": "Auditorium",
+            "conductor": "Conductor S",
+            "repertoire": [
+              {
+                "composer": "Brahms, Johannes",
+                "title": "Violin Concerto"
+              },
+              {
+                "composer": "Mendelssohn, Felix",
+                "title": "Symphony No. 2"
+              },
+              {
+                "composer": "Vivaldi, Antonio",
+                "title": "Concerto for Four Violins"
+              }
+            ],
+            "ensembles": ["PILTRI", "EnsMon"]
+          },
+          {
+            "date": "2025-03-02",
+            "startTime": "19:30",
+            "endTime": "21:30",
+            "location": "Community Center",
+            "conductor": "Conductor T",
+            "repertoire": [
+              {
+                "composer": "Haydn, Franz Joseph",
+                "title": "Symphony No. 96"
+              },
+              {
+                "composer": "Bach, Johann Sebastian",
+                "title": "Brandenburg Concerto No. 1"
+              },
+              {
+                "composer": "Schumann, Robert",
+                "title": "Cello Concerto"
+              }
+            ],
+            "ensembles": ["ECAS"]
+          },
+          {
+            "date": "2025-03-07",
+            "startTime": "20:15",
+            "endTime": "22:15",
+            "location": "Symphony Hall",
+            "conductor": "Conductor U",
+            "repertoire": [
+              {
+                "composer": "Mozart, Wolfgang Amadeus",
+                "title": "Symphony No. 29"
+              },
+              {
+                "composer": "Schubert, Franz",
+                "title": "Rosamunde Overture"
+              },
+              {
+                "composer": "Chopin, Frédéric",
+                "title": "Piano Concerto No. 1"
+              }
+            ],
+            "ensembles": ["ECAS", "EnsMon"]
+          },
+          {
+            "date": "2025-03-12",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "location": "Grand Hall",
+            "conductor": "Conductor V",
+            "repertoire": [
+              {
+                "composer": "Tchaikovsky, Pyotr Ilyich",
+                "title": "Symphony No. 6"
+              },
+              {
+                "composer": "Vivaldi, Antonio",
+                "title": "Guitar Concerto in A"
+              },
+              {
+                "composer": "Beethoven, Ludwig van",
+                "title": "Violin Concerto"
+              }
+            ],
+            "ensembles": ["ECAS", "PILTRI"]
+          },
+        {
+            "date": "2024-11-05",
             "startTime": "15:00",
             "endTime": "17:00",
             "location": "Community Center",

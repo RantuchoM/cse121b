@@ -8,6 +8,7 @@ const endDateInput = document.getElementById('endDate');
 const checkAllButton = document.getElementById('checkAllButton');
 const uncheckAllButton = document.getElementById('uncheckAllButton');
 const filterButton = document.getElementById('filterButton');
+const showRepertoireCheckbox = document.getElementById('showRepertoireCheckbox');
 
 let data; // Store JSON data
 let ensembleCheckboxesMap = {}; // Map to store ensemble checkboxes
@@ -67,18 +68,50 @@ function filterAndDisplayEvents() {
         return document.createElement('hr');
     }
 
+    // Function to display concerts as cards
+    function displayConcertCards(events) {
+        events.forEach((event) => {
+            const card = document.createElement('div');
+            card.classList.add('concert-card');
+
+            // Location and date
+            const locationDate = document.createElement('p');
+            locationDate.innerHTML = `<b class="location">${event.location.toUpperCase()}</b><br><br>${formatDate(event.date)} - ${formatTime(event.startTime, event.endTime)}`;
+            card.appendChild(locationDate);
+
+            // Conductor
+            const conductor = document.createElement('p');
+            conductor.innerHTML = `CONDUCTOR: ${event.conductor}`;
+            card.appendChild(conductor);
+
+            if (showRepertoireCheckbox.checked) {
+                // Repertoire
+                const repertoire = document.createElement('p');
+                repertoire.innerHTML = `<span style="font-style: italic; text-decoration: underline;">REPERTOIRE</span>`;
+                card.appendChild(repertoire);
+
+                const repertoireContainer = displayRepertoire(event.repertoire);
+                card.appendChild(repertoireContainer);
+            }
+
+            // Add the card to the agenda list
+            agendaList.appendChild(card);
+            //agendaList.appendChild(createSeparator());
+        });
+    }
+
     // Function to display repertoire as lines with minimal separation
     function displayRepertoire(repertoire) {
         const repertoireContainer = document.createElement('div');
         repertoireContainer.classList.add('repertoire-container');
-        
+
         repertoire.forEach(piece => {
             const repertoireLine = document.createElement('span');
             repertoireLine.textContent = `♫ ${piece.composer} - ${piece.title}`;
             repertoireContainer.appendChild(repertoireLine);
             repertoireContainer.appendChild(document.createElement('br')); // Add a line break
         });
-        
+
         return repertoireContainer;
     }
 
@@ -87,67 +120,76 @@ function filterAndDisplayEvents() {
         const eventDate = new Date(event.date + 'T' + event.startTime);
         const isDateInRange = (!startDate || eventDate >= startDate) && (!endDate || eventDate <= endDate);
         if (isDateInRange && event.ensembles.some(ensemble => ensemblesToDisplay.includes(ensemble))) {
-            const listItem = document.createElement('li');
-
-            // Event location formatted as a header
-            listItem.innerHTML = `<b>${event.location.toUpperCase()}</b><br>`;
-
-            // Date formatted as "dd month yyyy"
-            listItem.innerHTML += formatDate(event.date) + ' - ' + formatTime(event.startTime, event.endTime) + '<br>';
-            listItem.innerHTML += `CONDUCTOR: ${event.conductor}<br>`;
-
-            // Display repertoire as an unordered list
-            listItem.innerHTML += '<br><span style="font-style: italic; text-decoration: underline;">REPERTOIRE</span><br>';
-            listItem.appendChild(displayRepertoire(event.repertoire));
-
-            agendaList.appendChild(listItem);
-            agendaList.appendChild(createSeparator());
+            displayConcertCards([event]);
         }
     });
 }
+// Function to display ensemble checkboxes
+function displayEnsembleCheckboxes() {
+    if (!data || !data.ensembles || data.ensembles.length === 0) {
+        return; // Ensure data is available and has ensembles
+    }
 
-// Fetch the JSON data
-fetch(jsonDataUrl)
-    .then((response) => response.json())
-    .then((jsonData) => {
-        data = jsonData; // Store the JSON data for filtering
+    data.ensembles.forEach((ensemble) => {
+        const ensembleContainer = document.createElement('div');
+        ensembleContainer.classList.add('ensemble-container');
 
-        // Create checkboxes for ensembles and add to the page
-        data.ensembles.forEach((ensemble) => {
-            const ensembleContainer = document.createElement('div');
-            ensembleContainer.classList.add('ensemble-container');
+        const label = document.createElement('label');
+        label.setAttribute('for', ensemble.name);
+        label.textContent = ensemble.name;
 
-            const label = document.createElement('label');
-            label.setAttribute('for', ensemble.name);
-            label.textContent = ensemble.name;
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = ensemble.name;
+        checkbox.value = ensemble.name;
+        checkbox.classList.add('ensemble-checkbox');
 
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.id = ensemble.name;
-            checkbox.value = ensemble.name;
-            checkbox.classList.add('ensemble-checkbox');
+        label.prepend(checkbox); // Place the checkbox inside the label
 
-            label.prepend(checkbox); // Place the checkbox inside the label
+        ensembleContainer.appendChild(label);
 
-            ensembleContainer.appendChild(label);
-
-            ensembleCheckboxes.appendChild(ensembleContainer);
-            ensembleCheckboxesMap[ensemble.name] = checkbox;
-        });
-
-        // Add triggers to checkboxes
-        addTriggersToCheckboxes();
-
-        // Add event listeners to handle button clicks and date input changes
-        checkAllButton.addEventListener('click', checkAll);
-        uncheckAllButton.addEventListener('click', uncheckAll);
-        filterButton.addEventListener('click', filterAndDisplayEvents);
-        startDateInput.addEventListener('input', filterAndDisplayEvents);
-        endDateInput.addEventListener('input', filterAndDisplayEvents);
-
-        // Initially display events based on default selections
-        filterAndDisplayEvents();
-    })
-    .catch((error) => {
-        console.error('Error fetching JSON data:', error);
+        ensembleCheckboxes.appendChild(ensembleContainer);
+        ensembleCheckboxesMap[ensemble.name] = checkbox;
     });
+}
+// Define an async function to fetch JSON data
+async function fetchData() {
+    try {
+        const response = await fetch(jsonDataUrl);
+        if (response.ok) {
+            const jsonData = await response.json();
+            return jsonData; // Return the JSON data
+        } else {
+            console.error('Failed to fetch JSON data');
+            return null;
+        }
+    } catch (error) {
+        console.error('Error fetching JSON data:', error);
+        return null;
+    }
+}
+
+// Define the async initialization function
+async function initialize() {
+    data = await fetchData(); // Wait for the JSON data to be fetched
+    if (!data) {
+        // Handle the case where data is not successfully fetched
+        return;
+    }
+
+    displayEnsembleCheckboxes(); // Call your checkbox rendering function
+    addTriggersToCheckboxes();
+
+    // Add event listeners to handle button clicks, date input changes, and "Show Repertoire" checkbox change
+    checkAllButton.addEventListener('click', checkAll);
+    uncheckAllButton.addEventListener('click', uncheckAll);
+    filterButton.addEventListener('click', filterAndDisplayEvents);
+    startDateInput.addEventListener('input', filterAndDisplayEvents);
+    endDateInput.addEventListener('input', filterAndDisplayEvents);
+    showRepertoireCheckbox.addEventListener('change', filterAndDisplayEvents);
+
+    // Initially display events based on default selections
+    filterAndDisplayEvents();
+}
+
+initialize(); // Call the initialization function to start the process

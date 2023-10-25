@@ -92,9 +92,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #ccc;
+    border: 1px solid #3b1a1a;
     padding: 10px;
-    background-color: rgb(189, 186, 186);
+    background-color: rgb(184, 117, 30);
     width: 100%;
     font-size: 25px;
 }
@@ -117,4 +117,27 @@ button{
     width: 200px; /* Adjust the width as needed */
     height: 30px; /* Adjust the height as needed */
     font-size: 20px;
+}
+
+/* Responsive layout for concert cards */
+.concert-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: rgb(209, 166, 24);
+    width: 45%; /* Set the width to 45% to display two cards per row */
+    margin: 10px;
+    display: inline-block; /* Display cards inline to make them appear side by side */
+    vertical-align: top; /* Align cards to the top to ensure proper alignment */
+}
+
+/* Adjustments for smaller screens (e.g., portrait mode on mobile) */
+@media (max-width: 768px) {
+    .concert-card {
+        width: 100%; /* On smaller screens, make the width 100% to stack cards vertically */
+        margin: 10px 0; /* Remove horizontal margin and add vertical margin */
+    }
+}
+.location {
+    font-size: 30px; /* Adjust the font size as needed */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
