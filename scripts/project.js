@@ -7,7 +7,6 @@ const startDateInput = document.getElementById('startDate');
 const endDateInput = document.getElementById('endDate');
 const checkAllButton = document.getElementById('checkAllButton');
 const uncheckAllButton = document.getElementById('uncheckAllButton');
-const filterButton = document.getElementById('filterButton');
 const showRepertoireCheckbox = document.getElementById('showRepertoireCheckbox');
 
 let data; // Store JSON data
@@ -54,7 +53,9 @@ function filterAndDisplayEvents() {
 
     // Function to format a date as "dd month yyyy"
     function formatDate(dateStr) {
+        //console.log(dateStr);
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        //console.log(new Date(dateStr).toLocaleDateString(undefined, options));
         return new Date(dateStr).toLocaleDateString(undefined, options);
     }
 
@@ -63,10 +64,6 @@ function filterAndDisplayEvents() {
         return `${startTime} - ${endTime} hs`;
     }
 
-    // Function to create a separator line
-    function createSeparator() {
-        return document.createElement('hr');
-    }
 
     // Function to display concerts as cards
     function displayConcertCards(events) {
@@ -76,13 +73,20 @@ function filterAndDisplayEvents() {
 
             // Location and date
             const locationDate = document.createElement('p');
-            locationDate.innerHTML = `<b class="location">${event.location.toUpperCase()}</b><br><br>${formatDate(event.date)} - ${formatTime(event.startTime, event.endTime)}`;
+            locationDate.innerHTML = `<b class="location">${event.location.toUpperCase()}</b><br><br>${formatDate(event.date+ 'T00:00')} - ${formatTime(event.startTime, event.endTime)}`;
             card.appendChild(locationDate);
 
             // Conductor
             const conductor = document.createElement('p');
-            conductor.innerHTML = `CONDUCTOR: ${event.conductor}`;
+            conductor.innerHTML = `<i>CONDUCTOR:</i> ${event.conductor}`;
             card.appendChild(conductor);
+
+            const ensembles = document.createElement('p');
+            let ensemblesStr = "";
+            ensemblesStr = event.ensembles.reduce((a,x) => `${a}, ${x}`,"");
+            ensembles.innerHTML = `<i>ENSEMBLES:</i> ${ensemblesStr.substring(2)}`;
+            card.appendChild(ensembles);
+
 
             if (showRepertoireCheckbox.checked) {
                 // Repertoire
@@ -97,7 +101,10 @@ function filterAndDisplayEvents() {
             // Add the card to the agenda list
             agendaList.appendChild(card);
             //agendaList.appendChild(createSeparator());
+            
         });
+       
+        
     }
 
     // Function to display repertoire as lines with minimal separation
@@ -114,15 +121,20 @@ function filterAndDisplayEvents() {
 
         return repertoireContainer;
     }
-
+    let amount = 0;
     // Filter and display events for the selected ensembles and within the date range.
     data.events.forEach(event => {
+        //console.log(event.date);
         const eventDate = new Date(event.date + 'T' + event.startTime);
+        //console.log(eventDate);
         const isDateInRange = (!startDate || eventDate >= startDate) && (!endDate || eventDate <= endDate);
         if (isDateInRange && event.ensembles.some(ensemble => ensemblesToDisplay.includes(ensemble))) {
             displayConcertCards([event]);
+            amount ++;
         }
+        
     });
+    console.log(`Amount of events: ${amount}`);
 }
 // Function to display ensemble checkboxes
 function displayEnsembleCheckboxes() {
@@ -183,7 +195,6 @@ async function initialize() {
     // Add event listeners to handle button clicks, date input changes, and "Show Repertoire" checkbox change
     checkAllButton.addEventListener('click', checkAll);
     uncheckAllButton.addEventListener('click', uncheckAll);
-    filterButton.addEventListener('click', filterAndDisplayEvents);
     startDateInput.addEventListener('input', filterAndDisplayEvents);
     endDateInput.addEventListener('input', filterAndDisplayEvents);
     showRepertoireCheckbox.addEventListener('change', filterAndDisplayEvents);
