@@ -1,3 +1,5 @@
+import { fetchData } from './fetchData.js';
+
 // Use the JSON data URL you provided
 const jsonDataUrl = 'https://raw.githubusercontent.com/RantuchoM/cse121b/main/jsons/json.json';
 
@@ -7,6 +9,7 @@ const startDateInput = document.getElementById('startDate');
 const endDateInput = document.getElementById('endDate');
 const checkAllButton = document.getElementById('checkAllButton');
 const uncheckAllButton = document.getElementById('uncheckAllButton');
+const filterButton = document.getElementById('filterButton');
 const showRepertoireCheckbox = document.getElementById('showRepertoireCheckbox');
 
 let data; // Store JSON data
@@ -73,7 +76,7 @@ function filterAndDisplayEvents() {
 
             // Location and date
             const locationDate = document.createElement('p');
-            locationDate.innerHTML = `<b class="location">${event.location.toUpperCase()}</b><br><br>${formatDate(event.date+ 'T00:00')} - ${formatTime(event.startTime, event.endTime)}`;
+            locationDate.innerHTML = `<b class="location">${event.location.toUpperCase()}</b><br><br>${formatDate(event.date + 'T00:00')} - ${formatTime(event.startTime, event.endTime)}`;
             card.appendChild(locationDate);
 
             // Conductor
@@ -83,7 +86,7 @@ function filterAndDisplayEvents() {
 
             const ensembles = document.createElement('p');
             let ensemblesStr = "";
-            ensemblesStr = event.ensembles.reduce((a,x) => `${a}, ${x}`,"");
+            ensemblesStr = event.ensembles.reduce((a, x) => `${a}, ${x}`, "");
             ensembles.innerHTML = `<i>ENSEMBLES:</i> ${ensemblesStr.substring(2)}`;
             card.appendChild(ensembles);
 
@@ -100,11 +103,10 @@ function filterAndDisplayEvents() {
 
             // Add the card to the agenda list
             agendaList.appendChild(card);
-            //agendaList.appendChild(createSeparator());
             
         });
-       
-        
+
+
     }
 
     // Function to display repertoire as lines with minimal separation
@@ -130,9 +132,9 @@ function filterAndDisplayEvents() {
         const isDateInRange = (!startDate || eventDate >= startDate) && (!endDate || eventDate <= endDate);
         if (isDateInRange && event.ensembles.some(ensemble => ensemblesToDisplay.includes(ensemble))) {
             displayConcertCards([event]);
-            amount ++;
+            amount++;
         }
-        
+
     });
     console.log(`Amount of events: ${amount}`);
 }
@@ -164,26 +166,11 @@ function displayEnsembleCheckboxes() {
         ensembleCheckboxesMap[ensemble.name] = checkbox;
     });
 }
-// Define an async function to fetch JSON data
-async function fetchData() {
-    try {
-        const response = await fetch(jsonDataUrl);
-        if (response.ok) {
-            const jsonData = await response.json();
-            return jsonData; // Return the JSON data
-        } else {
-            console.error('Failed to fetch JSON data');
-            return null;
-        }
-    } catch (error) {
-        console.error('Error fetching JSON data:', error);
-        return null;
-    }
-}
+
 
 // Define the async initialization function
 async function initialize() {
-    data = await fetchData(); // Wait for the JSON data to be fetched
+    data = await fetchData(jsonDataUrl); // Wait for the JSON data to be fetched
     if (!data) {
         // Handle the case where data is not successfully fetched
         return;
@@ -195,6 +182,7 @@ async function initialize() {
     // Add event listeners to handle button clicks, date input changes, and "Show Repertoire" checkbox change
     checkAllButton.addEventListener('click', checkAll);
     uncheckAllButton.addEventListener('click', uncheckAll);
+    filterButton.addEventListener('click', filterAndDisplayEvents);
     startDateInput.addEventListener('input', filterAndDisplayEvents);
     endDateInput.addEventListener('input', filterAndDisplayEvents);
     showRepertoireCheckbox.addEventListener('change', filterAndDisplayEvents);
